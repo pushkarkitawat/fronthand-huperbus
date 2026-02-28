@@ -1,0 +1,223 @@
+
+.dashboard {
+    width: clamp(300px,500px,1000px);
+    left: 100px;
+    top: 20px;
+    height: 280px;
+    border: 1px solid rgb(202, 201, 201);
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+  }
+  .dash {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    width: 1460px;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+    position: relative;
+    left: 250px;
+    background-color: #f5f5f5;
+  }
+  #backbutton{
+    position: relative;
+    left: 75%;
+    top: -30px;
+  }
+.dashboard-navbar{
+  position: relative;
+  display: flex;
+  top: 1px;
+  box-shadow: 1px 1px 10px rgba(22, 22, 22, 0.453);
+  z-index: 9;
+  width: 1450px;
+  height: 30px;
+  padding: 10px;
+  background-color: rgba(135, 207, 235, 0.488);
+  left: 240px;
+  align-items: center;
+  border-radius: 0px 0px 10px 0px;
+  justify-content: space-between;
+}
+  .dashboard-title {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    left: 50px;
+    
+    margin-bottom: 20px;
+  }
+  .dashboard-option {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    width: 250px;
+    gap: 20px;
+    top: -5px;
+  }
+  
+  .dashboard-btn {
+    flex: 0 1 auto;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 12px;
+   
+   background-color: transparent;
+   
+    cursor: pointer;
+  }
+  
+  .dashboard-btn:hover {
+    
+    transform: translateY(-1px);
+  }
+  
+  
+  
+  
+  /* Stats section */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+    gap: 16px;
+   
+    
+  }
+  
+  
+  .stat-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    padding: 16px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  .stat-card:hover{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.238)
+  }
+ 
+  .stat-icon {
+    font-size: 28px;
+    color: #3b82f6;
+  }
+  .stat-icon1 {
+    font-size: 28px;
+    color: #0f1011;
+  }
+  .stat-icon1:hover{
+    color:rgb(35, 35, 35)ƒ;
+  }
+  .stat-value {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .stat-info h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .stat-card h4 {
+    margin: 0px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff9800; /* orange for extra */
+  }
+  
+  .stat-label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Actions section */
+  .actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .action-btn {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .action-btn.blue {
+    background: #3b82f6;
+  }
+  .action-btn.blue:hover {
+    background: #2563eb;
+  }
+  
+  .action-btn.green {
+    background: #22c55e;
+  }
+  .action-btn.green:hover {
+    background: #16a34a;
+  }
+  
+  .action-btn.purple {
+    background: #8b5cf6;
+  }
+  .action-btn.purple:hover {
+    background: #7c3aed;
+  }
+  
+  /* Activities section */
+  .activities {
+    background: #fff;
+    padding: 16px;
+    width: 500px;
+    top: 20px;
+    position: relative;
+    left: 50px;
+    overflow-y: scroll;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activities-title {
+    font-size: 18px;
+    position: relative;
+    font-weight: 700;
+    left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .activities ul {
+    list-style: disc inside;
+    color: #444;
+    height:200px ;
+  }
+  
+  .activities li {
+    margin: 6px 0;
+   
+    overflow-y: scroll;
+  }
+  .graph{
+    top: 0px;
+    position: relative;
+    left: 30px;
+    min-width: 1400px;
+    height: 600px;
+  }
+  

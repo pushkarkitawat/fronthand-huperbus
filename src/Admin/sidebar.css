@@ -1,0 +1,91 @@
+.bar{
+    width: clamp(200px,250px,300px);
+    background-color: rgb(243, 243, 243);
+    height: 100vh;
+    margin: 0px;
+    z-index: 10;
+    position: absolute;
+    box-shadow: 0px 2px 20px rgb(187, 187, 187);
+    
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value:0deg;
+    inherits: false;
+
+    
+}
+/* Register animatable custom property */
+@property --height {
+    syntax: "<percentage>";
+    initial-value: 0%;
+    inherits: false;
+  }
+.bar::before {
+    content: '';
+    z-index: -1;
+    width: 1%;
+    height: 0%;                 /* start height */
+    left: 250px;
+    position: absolute;
+    background-color: skyblue;
+    
+    animation: roll 2s linear forwards;
+    display: block;
+  }
+  
+ 
+  
+.bar h2 {
+    justify-self: center;
+    color: rgb(13, 91, 194);
+    letter-spacing: 1px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+.links {
+    position: relative;
+    height: 600px;
+    top: 20px;
+    left: -30px;
+    
+    display: block;
+    
+    
+}
+
+.links ul li{
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    padding: 5px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(46, 45, 45);   
+    
+}
+.link:hover{
+    color: rgb(134, 134, 134);
+    
+}
+.link span{
+    margin-right: 5px;
+    padding: 10px;
+    position: relative;
+    font-size: 25px;
+}
+@keyframes roll {
+    from {
+      height: 0%;
+    }
+    to {
+      height: 100%;
+    }
+  }

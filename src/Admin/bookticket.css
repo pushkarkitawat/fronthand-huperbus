@@ -1,0 +1,227 @@
+/* Global resets */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f4f6fb;
+  color: #333;
+}
+
+/* Wrapper */
+.bluebus-container {
+  width: clamp(400px, 1200px, 1400px);
+  margin: 28px auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #2f80ed, #3aa0ff);
+  color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(47, 128, 237, 0.25);
+}
+
+.header-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.header-text h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header-text p {
+  font-size: 13px;
+  color: #e0e0e0;
+}
+
+/* Layout */
+.layout {
+  margin-top: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns */
+  gap: 20px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(20, 30, 50, 0.06);
+}
+
+/* Sections */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-row > div {
+  flex: 0 0 auto;
+  min-width: 150px;
+}
+
+
+
+
+
+/* Form */
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #0b2546;
+}
+
+input,
+select {
+  width:200px;
+  padding: 8px 10px;
+  position: relative;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+select {
+  width: 220px;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2f80ed;
+  box-shadow: 0 0 0 2px rgba(47, 128, 237, 0.15);
+}
+
+/* Row groups */
+.form-row {
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  
+  height: fit-content;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid rgb(241, 240, 240);
+  box-shadow: 2px 2px 20px rgb(239, 239, 239),
+  inset -2px -2px 5px rgb(233, 233, 233) ;
+}
+
+.form-row > div {
+  flex: 0 0 auto;
+  height: auto;
+  padding: 10px;
+  
+}
+
+/* Buttons */
+.form-row button {
+  background: #2f80ed;
+  color: #fff;
+  position: relative;
+  top: 10px;
+  left: 340px;
+  padding: 8px 14px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.form-row button:hover {
+  background: #1f5ec6;
+}
+
+/* Ticket Preview */
+.ticket-preview p {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.ticket-preview strong {
+  color: #0b2546;
+}
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr; /* stack on mobile */
+  }
+
+  .bluebus-container {
+    width: 100vw;
+    align-self: center;
+  }
+  .form-row{
+    display: flex;
+    
+
+  }
+  
+
+  
+  .form-row button {
+    position: relative;
+    left: 130px;
+    max-height: 30px;
+    margin-right: 10px;
+    justify-self: center;
+  }
+}
+/* For Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#manage-search{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-size: 18px;
+  width: 100px;
+  padding: 10px;
+  left: 200px;
+}
+#cancel-button{
+  border: none;
+  background-color: red;
+  color: white;
+  letter-spacing: 1px;
+  position: relative;
+  
+  font-size: 16px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 150px;
+  font-weight: bold;
+  justify-self: right;
+}

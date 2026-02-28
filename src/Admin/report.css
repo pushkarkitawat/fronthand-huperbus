@@ -1,0 +1,84 @@
+.report-card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(20, 30, 50, 0.06);
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  .report-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+  
+  .report-table th,
+  .report-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+  
+  .report-table th {
+    background: #f5f7fb;
+    font-weight: 600;
+  }
+  
+  .report-table tr:hover {
+    background: #fafafa;
+  }
+  
+  .status-confirmed {
+    color: green;
+    font-weight: 600;
+  }
+  
+  .status-cancelled {
+    color: red;
+    font-weight: 600;
+  }
+  
+  .status-pending {
+    color: rgb(255, 167, 4);
+    font-weight: 600;
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .report-table {
+      font-size: 13px;
+    }
+  
+    .report-table th,
+    .report-table td {
+      padding: 8px 10px;
+    }
+  }
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .filter-row select,
+  .filter-row input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .filter-row input[type="number"] {
+    width: 100px;
+  }
+  .filter-row input[type="text"] {
+    flex: 1;
+    min-width: 220px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+      
